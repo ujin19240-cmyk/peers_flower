@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>피어스 플라워 — 매일 새벽, 꽃시장에서</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="logo">피어스 플라워</a>
+    <nav class="nav" id="nav">
+      <a href="#about">소개</a>
+      <a href="#bouquets">부케</a>
+      <a href="#stores">매장</a>
+      <a href="#franchise">가맹문의</a>
+      <a href="#subscribe" class="nav-cta">정기구독</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">SINCE 2016 · ONLINE &amp; OFFLINE</p>
+      <h1 class="hero-title">매일 새벽,<br><span class="accent">꽃시장</span>에서<br>바로 옵니다</h1>
+      <p class="hero-desc">피어스 플라워는 경매가 끝난 새벽 5시, 그날 가장 좋은 등급의 꽃만 받아옵니다. 온라인 주문은 오늘 아침 꽃으로, 매장은 오늘 아침 꽃으로 채웁니다.</p>
+      <div class="hero-actions">
+        <a href="#bouquets" class="btn btn-primary">부케 주문하기</a>
+        <a href="#franchise" class="btn btn-ghost">가맹 안내 보기</a>
+      </div>
+    </div>
+
+    <div class="tag-board" aria-hidden="true">
+      <div class="tag t1"><span class="tag-name">리시안서스</span><span class="tag-row">산지 · 고양</span><span class="tag-row">등급 · <b>특</b></span><span class="tag-price mono">1,200원 / 송이</span></div>
+      <div class="tag t2"><span class="tag-name">라넌큘러스</span><span class="tag-row">산지 · 김해</span><span class="tag-row">등급 · <b>특</b></span><span class="tag-price mono">1,800원 / 송이</span></div>
+      <div class="tag t3"><span class="tag-name">유칼립투스</span><span class="tag-row">산지 · 제주</span><span class="tag-row">등급 · 상</span><span class="tag-price mono">900원 / 단</span></div>
+      <div class="tag t4"><span class="tag-name">델피니움</span><span class="tag-row">산지 · 대구</span><span class="tag-row">등급 · <b>특</b></span><span class="tag-price mono">1,500원 / 송이</span></div>
+      <div class="tag t5"><span class="tag-name">피오니</span><span class="tag-row">산지 · 수입</span><span class="tag-row">등급 · <b>특</b></span><span class="tag-price mono">2,500원 / 송이</span></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-copy">
+        <p class="eyebrow">HOW WE SOURCE</p>
+        <h2>경매장에서 매장까지, 8시간</h2>
+        <p>새벽 경매에서 낙찰받은 꽃은 그날 오전 안에 전 매장과 온라인 주문 건에 나뉘어 도착합니다. 유통 단계를 하나 줄일 때마다 꽃은 하루씩 더 오래 삽니다.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-panel"><span class="stat-num mono">62</span><span class="stat-label">가맹 매장</span></div>
+        <div class="stat-panel"><span class="stat-num mono">14</span><span class="stat-label">진출 도시</span></div>
+        <div class="stat-panel"><span class="stat-num mono">D+0</span><span class="stat-label">당일 입고 · 당일 발송</span></div>
+      </div>
+    </div>
+
+    <div class="week-chart">
+      <p class="week-chart-label">이번 주 입고량 <span class="mono" id="weekTotal">0</span>송이</p>
+      <div class="week-bars" id="weekBars"></div>
+    </div>
+  </section>
+
+  <section class="bouquets" id="bouquets">
+    <div class="section-head">
+      <p class="eyebrow">BOUQUET LINE</p>
+      <h2>부케 라인업</h2>
+    </div>
+    <div class="bouquet-grid">
+
+      <article class="bouquet-card">
+        <h3>데일리 부케</h3>
+        <p class="bouquet-desc">그날 입고된 꽃 중 가장 상태 좋은 3종으로 매일 다르게 구성합니다.</p>
+        <p class="bouquet-price mono">32,000원 부터</p>
+      </article>
+
+      <article class="bouquet-card">
+        <h3>프러포즈 부케</h3>
+        <p class="bouquet-desc">장미·작약 중심, 원하는 색과 개수를 지정할 수 있습니다.</p>
+        <p class="bouquet-price mono">89,000원 부터</p>
+      </article>
+
+      <article class="bouquet-card">
+        <h3>축하 화환</h3>
+        <p class="bouquet-desc">개업·승진·행사용 3단 화환, 당일 배송 가능 지역 확인 후 발송합니다.</p>
+        <p class="bouquet-price mono">75,000원 부터</p>
+      </article>
+
+      <article class="bouquet-card">
+        <h3>정기구독 부케</h3>
+        <p class="bouquet-desc">매주 같은 요일, 그 주의 제철 꽃으로 새로 구성해 보내드립니다.</p>
+        <p class="bouquet-price mono">주 28,000원</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="stores" id="stores">
+    <div class="section-head">
+      <p class="eyebrow">STORES</p>
+      <h2>매장 안내</h2>
+    </div>
+    <div class="store-grid">
+      <div class="store-panel">
+        <span class="panel-key">성수 본점</span>
+        <p>서울 성동구 성수이로 12길 8<br><span class="dim">매일 08:00–20:00</span></p>
+      </div>
+      <div class="store-panel">
+        <span class="panel-key">해운대점</span>
+        <p>부산 해운대구 달맞이길 45<br><span class="dim">매일 09:00–19:00</span></p>
+      </div>
+      <div class="store-panel">
+        <span class="panel-key">온라인 스토어</span>
+        <p>전국 당일·익일 배송<br><span class="dim">주문 마감 · 매일 15:00</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="franchise" id="franchise">
+    <div class="section-head">
+      <p class="eyebrow">FRANCHISE</p>
+      <h2>두 가지 방식으로<br>시작할 수 있습니다</h2>
+      <p class="section-desc">손님을 직접 응대하는 유인 매장부터, 24시간 셀프 결제로 운영하는 무인 매장까지. 본사가 새벽 소싱을 맡기 때문에 두 모델 모두 꽃을 고르는 시간이 필요 없습니다.</p>
+    </div>
+
+    <div class="franchise-grid">
+
+      <article class="franchise-card">
+        <span class="franchise-tag">유인 매장</span>
+        <h3>플로리스트 상주형</h3>
+        <p class="franchise-card-desc">플로리스트가 상주하며 맞춤 부케 제작과 대면 상담을 제공하는 표준 매장입니다.</p>
+        <div class="franchise-meta">
+          <div><span class="meta-key">초기 비용</span><span class="meta-val mono">8,000만원~</span></div>
+          <div><span class="meta-key">필요 면적</span><span class="meta-val mono">15~25평</span></div>
+          <div><span class="meta-key">운영 시간</span><span class="meta-val mono">08:00–20:00</span></div>
+        </div>
+        <ul class="franchise-steps">
+          <li><span class="mono">01</span> 창업 상담 &amp; 상권 분석</li>
+          <li><span class="mono">02</span> 인테리어 &amp; 초도 물량 세팅</li>
+          <li><span class="mono">03</span> 오픈 &amp; 매일 새벽 소싱 연결</li>
+        </ul>
+        <a href="#subscribe" class="btn btn-ghost">유인 매장 상담</a>
+      </article>
+
+      <article class="franchise-card franchise-card-highlight">
+        <span class="franchise-tag franchise-tag-alt">무인 매장</span>
+        <h3>24시간 셀프 스토어형</h3>
+        <p class="franchise-card-desc">냉장 쇼케이스와 무인 결제 키오스크로 운영하고, 본사가 하루 2회 직접 방문해 채워 넣습니다.</p>
+        <div class="franchise-meta">
+          <div><span class="meta-key">초기 비용</span><span class="meta-val mono">3,500만원~</span></div>
+          <div><span class="meta-key">필요 면적</span><span class="meta-val mono">6~10평</span></div>
+          <div><span class="meta-key">운영 시간</span><span class="meta-val mono">24시간</span></div>
+        </div>
+        <ul class="franchise-steps">
+          <li><span class="mono">01</span> 입지 실사 &amp; 냉장 쇼케이스 설계</li>
+          <li><span class="mono">02</span> 무인 키오스크 &amp; CCTV 설치</li>
+          <li><span class="mono">03</span> 오픈 &amp; 하루 2회 자동 리필</li>
+        </ul>
+        <a href="#subscribe" class="btn btn-primary">무인 매장 상담</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="subscribe" id="subscribe">
+    <div class="subscribe-inner">
+      <p class="eyebrow">NEWSLETTER &amp; SUBSCRIPTION</p>
+      <h2>이번 주 입고 소식을<br>먼저 받아보세요</h2>
+      <form id="subscribeForm" class="subscribe-form">
+        <input type="email" id="subscribeEmail" placeholder="이메일 주소" required aria-label="이메일 주소">
+        <button type="submit" class="btn btn-primary">구독 신청</button>
+      </form>
+      <p class="subscribe-msg" id="subscribeMsg" role="status"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="#hero" class="logo">피어스 플라워</a>
+    <nav class="footer-nav">
+      <a href="#about">소개</a>
+      <a href="#bouquets">부케</a>
+      <a href="#stores">매장</a>
+      <a href="#franchise">가맹문의</a>
+    </nav>
+    <p class="footer-copy">© 2026 Pierce Flower. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
